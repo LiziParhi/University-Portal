@@ -1,0 +1,24 @@
+h2= @student.name
+p Student Id : #{@student.id}
+p Date of birth: #{@student.birthday.strftime("%e %B %Y") if @student.birthday}
+p Age: #{@student.age}
+p Major :#{@student.major}
+p Address :#{@student.address}
+p Guardian :#{@student.guardian}
+
+p <a href="/students">Back to students index</a>
+button class="btn" <a href="/students/#{@student.id}/edit">Edit this student</a>
+br
+br
+
+form action="/students/#{@student.id}" method="POST"
+  input type="hidden" name="_method" value="DELETE"
+  input class="btn" type="submit" value="Delete this student" 
+
+
+  
+
+
+
+
+ 

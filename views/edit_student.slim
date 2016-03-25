@@ -1,0 +1,6 @@
+h2 Edit Student
+form class="formborder" method="POST" action="/students/#{@student.id}"
+  input type="hidden" name="_method" value="PUT"
+  == slim :student_form
+
+

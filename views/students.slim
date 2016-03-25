@@ -1,0 +1,9 @@
+h2
+  | List of Students
+- if @student.any?
+  ul 
+    -@student.each do |student|
+      li <a href="/students/#{student.id}">#{student.name}</a>
+      br
+- else
+  p No students have been created yet!

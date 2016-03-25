@@ -1,0 +1,44 @@
+
+label for="id" Id: &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+input#id type="number" name="student[id]" value="#{@student.id}" class="myid"
+
+br
+br
+label class ="lab" for="name"  Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+input#name type="text" name="student[name]" value="#{@student.name}" class="myid"
+
+br
+br
+
+label for="age" Age: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+input#age type="number" name="student[age]" value="#{@student.age}" class="myid"
+
+br
+br
+
+label for="birthday" DOB(mm/dd/yyyy):&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+input#birthday type="text" name="student[birthday]" value="#{@student.birthday.strftime("%m/%d/%Y") if @student.birthday}" class="myid"
+
+br
+br
+
+label for="major" Major: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+input#major type ="text" name="student[major]" value ="#{@student.major}" class="myid"
+
+br
+br
+
+label for="guardian" Guardian:&nbsp&nbsp&nbsp&nbsp
+input#guardian type="text" name="student[guardian]" value="#{@student.guardian}" class="myid"
+
+br
+br
+
+label for="address" Address:&nbsp&nbsp&nbsp&nbsp&nbsp
+input#address type="text" name="student[address]" value="#{@student.address}" class="myid"
+
+br
+br
+
+input class="btn" type="submit" value="Save Student"

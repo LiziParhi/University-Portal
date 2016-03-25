@@ -1,0 +1,15 @@
+doctype html
+html lang="en"
+  head
+    title==@title || "University Portal"
+    meta charset="utf-8"
+    link rel="stylesheet" href="/css/styles.css" type="text/css"
+    link rel="icon" type="image/png" href="graduated.png"
+
+
+  body
+    header
+      h1  Welcome to Students portal
+      == erb :nav
+    section
+      == yield
